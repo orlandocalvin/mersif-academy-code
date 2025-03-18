@@ -18,6 +18,10 @@ h2 {
     color: #333;
 }
 
+.status-h3 {
+    margin-top: -0.25rem;
+}
+
 p {
     font-size: 18px;
     color: #555;
@@ -28,12 +32,13 @@ p {
     padding: 10px;
     border-radius: 5px;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin: -0.5rem 0 1.75rem;
 }
 
 .button-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    margin-bottom: .25rem;
 }
 
 button {
@@ -45,7 +50,8 @@ button {
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: background-color 0.3s ease;
+    margin: -0.75rem 1.25rem 0;
 }
 
 button:hover {
@@ -58,4 +64,38 @@ button:hover {
 
 .btn-off:hover {
     background-color: #a71d2a;
+}
+
+.input-group {
+    margin-bottom: 10px;
+}
+
+input {
+    width: 80%;
+    padding: .35rem;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: .25rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.save-btn {
+    background-color: rgb(59, 59, 195);
+    border: none;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: .5rem;
+}
+
+.save-btn:hover {
+    background-color: rgb(41, 41, 167);
+}
+
+.hidden {
+    display: none;
 }

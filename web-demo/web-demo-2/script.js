@@ -35,7 +35,7 @@ client.on("message", (topic, message) => {
 
 function sendCommand(cmd) {
     client.publish(topicPub, cmd)
-    console.log("Send: " + cmd);
+    console.log("sendCommand: " + cmd);
 }
 
 function confirmReset() {

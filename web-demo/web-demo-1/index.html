@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESP32 MQTT Dashboard</title>
+    <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>ESP32 MQTT Dashboard</h2>
+
+        <h3>Status dari ESP32:</h3>
+        <p class="status-box" id="status">Menunggu pesan...</p>
+
+        <h3>Kontrol LED</h3>
+        <div class="button-container">
+            <button onclick="sendCommand('ON')">LED ON</button>
+            <button class="btn-off" onclick="sendCommand('OFF')">LED OFF</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
